@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>React Basics</title>
+</head>
+
+<body>
+    <div class="js-container"></div>
+
+    <script src="scripts/react.js"></script>
+    <script src="scripts/react-dom.js"></script>
+    <script src="scripts/babel.js"></script>
+
+    <script type="text/babel">
+
+        const button = <button>OK</button>;
+
+        const paragraph = <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consectetur exercitationem soluta voluptate ad unde aperiam recusandae voluptatibus aliquam perspiciatis!</p>;
+
+        const div = (
+            <div>
+                <button>OK</button>
+                <p>lorem10 {2+2}</p>
+            </div>
+        );
+
+        const container = document.querySelector('.js-container');
+        //   ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
+        ReactDOM.createRoot(container).render(button);
+        ReactDOM.createRoot(container).render(div);
+    </script>
+</body>
+
+</html>
